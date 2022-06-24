@@ -1,19 +1,149 @@
 * {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
+h1 {
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 80px;
+}
+
+div { text-align: justify; }
+body { padding-left: 25px; padding-right: 25px; font-family: "Gill Sans", sans-serif; }
+
+
 /***** Desktop version *****/
 @media (min-width: 992px) {
 
+	.cont1, .cont2, .cont3 {
+		width: 33.33%;
+		float: left;
+	}
+
+	.ctn1, .ctn2, .ctn3 {
+		width: 90%;
+		background: rgb(153, 153, 153);
+		border: 2px solid black;
+		margin: auto;
+		position: relative;
+	}
+
+	#titl1, #titl2, #titl3 {
+		font-weight: bold;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		text-align: center;
+		padding-top: 4.5px;
+		height: 30px;
+		width: 120px;
+		border-bottom: 2px solid black;
+		border-left: 2px solid black;
+	}
+
+	#titl1 { background: rgb(212, 153, 152); }
+	#titl2 { background: rgb(193, 70, 67); color: white; }
+	#titl3 { background: rgb(230, 209, 152); }
+	
+	#para1, #para2, #para3 {
+		padding: 45px 20px 15px 20px;
+	}
+	
 }
 
 /***** Tablet  version *****/
 @media (min-width: 768px) and (max-width: 991px) {
 
+	.cont1, .cont2 {
+		width: 50%;
+		float: left;
+	}
+
+	.cont3 {
+		width: 100%;
+		float: left;
+	}
+
+	.ctn1, .ctn2 {
+		width: 90%;
+		background: rgb(153, 153, 153);
+		border: 2px solid black;
+		margin: auto;
+		position: relative;
+	}
+
+	.ctn3 {
+		width: 95%;
+		background: rgb(153, 153, 153);
+		border: 2px solid black;
+		margin: auto;
+		margin-top: 40px;
+		position: relative;
+	}
+
+	#titl1, #titl2, #titl3 {
+		font-weight: bold;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		text-align: center;
+		padding-top: 4.5px;
+		height: 30px;
+		width: 120px;
+		border-bottom: 2px solid black;
+		border-left: 2px solid black;
+	}
+
+	#titl1 { background: rgb(212, 153, 152); }
+	#titl2 { background: rgb(193, 70, 67); color: white; }
+	#titl3 { background: rgb(230, 209, 152); }
+	
+	#para1, #para2, #para3 {
+		padding: 45px 20px 15px 20px;
+	}
+
+
 }
 
 /***** Mobile  version *****/
 @media (max-width: 767px) {
+
+	.cont1, .cont2, .cont3 {
+		width: 100%;
+		float: left;
+	}
+
+	.ctn1, .ctn2, .ctn3 {
+		width: 95%;
+		background: rgb(153, 153, 153);
+		border: 2px solid black;
+		margin: auto;
+		margin-bottom: 40px;
+		position: relative;
+	}
+
+	#titl1, #titl2, #titl3 {
+		font-weight: bold;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		text-align: center;
+		padding-top: 4.5px;
+		height: 30px;
+		width: 120px;
+		border-bottom: 2px solid black;
+		border-left: 2px solid black;
+	}
+
+	#titl1 { background: rgb(212, 153, 152); }
+	#titl2 { background: rgb(193, 70, 67); color: white; }
+	#titl3 { background: rgb(230, 209, 152); }
+	
+	#para1, #para2, #para3 {
+		padding: 45px 20px 15px 20px;
+	}
+
 
 }
